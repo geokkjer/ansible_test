@@ -52,3 +52,12 @@
       state: latest
     when: ansible_distribution in ["Debian", "Ubuntu"]
 
+- hosts: file_servers
+  become: true
+  tasks:
+
+  - name: install samba package
+    package:
+      name: samba
+      state: latest
+
