@@ -2,6 +2,7 @@
 ansible_user=vagrant
 
 [hosts]
-192.168.0.241
-192.168.0.237
-192.168.0.212
+192.168.0.241 apache_package=apache2 php_package=libapache2-mod-php
+192.168.0.237 apache_package=apache2 php_package=libapache2-mod-php
+192.168.0.212 apache_package=apache2 php_package=libapache2-mod-php
+#CentOSip apache_package=httpd php_package=php
