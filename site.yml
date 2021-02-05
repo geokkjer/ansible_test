@@ -36,4 +36,19 @@
       state: latest
     when: ansible_distribution == "CentOS"
 
+- hosts: db_servers
+  become: true
+  tasks:
+
+  - name: install mariadb (CentOS)
+    dnf:
+      name: mariadb
+      state: latest
+    when: ansible_distribution == "CentOS"
+
+  - name: install mairadb (Debian)
+    apt:
+      name: mariadb-server
+      state: latest
+    when: ansible_distribution in ["Debian", "Ubuntu"]
 
