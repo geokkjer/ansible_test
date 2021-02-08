@@ -8,5 +8,7 @@ ansible_user=vagrant
 192.168.0.237
 
 [file_servers]
-192.168.0.242
+192.168.0.231
 
+[workstations]
+192.168.0.214
