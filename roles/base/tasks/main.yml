@@ -1,0 +1,5 @@
+  - name: add ssh key for yalson
+    tags: always
+    authorized_key:
+      user: simone
+      key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID2H8ArXCPyC5jeDcFAY08PQ5yJ+vUY5S+5u534IX0Lz ansible"
